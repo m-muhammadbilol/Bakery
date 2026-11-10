@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crumb &amp; Crust — Our Freshly Baked Selection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="page">
+<header><span class="brand">Crumb &amp; Crust</span>
+<button class="cartbtn" id="openCart" aria-label="Open cart, 0 items"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span>Cart</span><span class="count" id="count">0</span></button></header>
+<section class="hero" aria-labelledby="ht"><div><p class="eyebrow">Small-batch bakery, slow oven</p><h1 id="ht">Butter, flour, and patience.</h1><p class="lead">Croissants laminated by hand, sourdough fed every day, and cakes finished to order. Everything on this menu came out of the oven this morning.</p><a class="btn cta" href="#menu">Browse the menu</a><ul class="facts"><li>Baked from 5 a.m.</li><li>Open daily, 7:00 to 19:00</li><li>Cakes: order 48 hours ahead</li></ul></div><div class="hv"><div class="ring" aria-hidden="true"></div><div class="arch a1"><img id="hi1" alt="" width="400" height="400"></div><div class="arch a2"><img id="hi2" alt="" width="400" height="400"></div><div class="fav"><img id="hi3" alt="" width="52" height="52"><div><b id="favN"></b><small id="favP"></small></div><button class="add2" id="favB">Add</button></div></div></section>
+<section class="intro" id="menu"><p class="eyebrow">From our ovens, every morning</p><h2>Our Freshly Baked Selection</h2><p class="sub">Made with care, baked fresh, and served with love.</p><div class="divider" aria-hidden="true"><i></i></div></section>
+<nav class="cats" id="cats" aria-label="Product categories"></nav>
+<main><p class="status" id="status" aria-live="polite"></p><div class="grid" id="grid"></div></main>
+</div>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dtitle">
+<div class="dh"><h2 id="dtitle">Your cart</h2><button class="icon" id="closeCart" aria-label="Close cart">&times;</button></div>
+<ul class="items" id="items"></ul>
+<div class="df" id="df"><div class="sub"><span>Subtotal</span><span id="subtotal">$0</span></div><button class="btn" id="checkout">Checkout (demo only)</button><button class="btn alt" id="continue">Continue shopping</button></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
